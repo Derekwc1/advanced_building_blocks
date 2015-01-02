@@ -1,0 +1,20 @@
+def bubble_sort(bubble)
+x = 0
+y = 1
+
+while y < bubble.length
+	if bubble[x] - bubble[y] < 0
+	    x = x + 1
+    	y = y + 1
+	else
+	    change = bubble[y]
+	    bubble.delete(change)
+	    bubble.unshift(change)
+	    x = 0
+	    y = 1
+    end
+end
+puts bubble
+end
+
+bubble_sort([5, 1, 90, 2, 53, 13])
